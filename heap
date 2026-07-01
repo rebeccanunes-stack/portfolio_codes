@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std; 
+
+int main() { 
+  int* p = new int; // alocação dinâmica na heap 
+  *p = 42; 
+
+  cout << "Valor na heap: " << *p << endl; 
+
+  delete p; // liberar memória 
+  return 0; 
+}
