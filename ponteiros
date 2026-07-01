@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std; 
+
+void incrementar(int *x) { 
+  (*x)++; 
+} 
+
+int main() { 
+  int valor = 10; 
+  cout << "Valor antes: " << valor << endl; 
+  incrementar(&valor); // Passando o endereço de 'valor' 
+  cout << "Valor depois: " << valor << endl;
+  
+  return 0; 
+}
